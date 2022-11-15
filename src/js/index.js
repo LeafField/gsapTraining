@@ -1,4 +1,4 @@
-import { gsap, Power2 } from "gsap"
+import { gsap, Power2, Power4 } from "gsap"
 
 import "../styles/style.scss";
 
@@ -10,8 +10,8 @@ const headline = document.querySelector(".headline");
 
 const tl = gsap.timeline();
 
-tl.fromTo(hero, { height: "0%", }, { height: "80%", ease: Power2.easeInOut, duration: 1 })
-  .fromTo(hero, { width: "100%" }, { width: "80%", duration: 1.2, ease: Power2.easeInOut })
+tl.fromTo(hero, { height: "0%", }, { height: "80%", ease: Power4.easeInOut, duration: 1 })
+  .fromTo(hero, { width: "100%" }, { width: "80%", duration: 1.2, ease: Power4.easeInOut })
   .fromTo(slider, { y: "-100%" }, { y: "0", duration: 1.2, ease: Power2.easeInOut }, "-=1.2")
   .fromTo(logo, { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.5 }, "-=0.5")
   .fromTo(menu, { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.5 }, "-=0.5")
